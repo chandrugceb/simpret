@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.sai.simpret">
    <application
-        android:label="simpret"
+        android:label="balki"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"
