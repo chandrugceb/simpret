@@ -74,6 +74,7 @@ class _ProductWidgetState extends State<ProductWidget> {
                       childAspectRatio: 4 / 3,
                       crossAxisSpacing: 1,
                       mainAxisSpacing: 1),
+                  cacheExtent: 2000,
                   itemCount: this
                       ._productProvider
                       .products
