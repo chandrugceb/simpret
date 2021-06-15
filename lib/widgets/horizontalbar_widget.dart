@@ -1,8 +1,10 @@
 /// Horizontal bar chart example
+// ignore: import_of_legacy_library_into_null_safe
 import 'package:charts_flutter/flutter.dart' as charts;
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 
+// ignore: must_be_immutable
 class HorizontalBarChart extends StatelessWidget {
   final List<charts.Series<DailySales, String>> seriesList;
   Function(DateTime) drillDownByDate;

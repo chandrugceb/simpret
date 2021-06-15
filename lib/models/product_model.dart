@@ -12,13 +12,13 @@ class ProductModel {
     required this.unitName,
   });
 
-  factory ProductModel.fromJson(dynamic JSON) {
+  factory ProductModel.fromJson(dynamic jSON) {
     return ProductModel(
-        id: JSON['id'],
-        name: JSON['name'],
-        category: JSON['category'],
-        unitPrice: double.parse(JSON['unitPrice'].toString()),
-        unitName: JSON['unitName']);
+        id: jSON['id'],
+        name: jSON['name'],
+        category: jSON['category'],
+        unitPrice: double.parse(jSON['unitPrice'].toString()),
+        unitName: jSON['unitName']);
   }
 
   Map toJson() => {

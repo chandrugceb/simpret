@@ -4,6 +4,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:simpret/providers/chart_provider.dart';
 import 'package:simpret/widgets/horizontalbar_widget.dart';
 
+// ignore: must_be_immutable
 class ReportWidget extends StatefulWidget {
 
   late ChartProvider chartProvider;

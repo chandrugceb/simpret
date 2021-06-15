@@ -50,7 +50,7 @@ class _ProductWidgetState extends State<ProductWidget> {
                     },),
                   ),
           ],
-          title: titleWidget(),
+          title: TitleWidget(),
           bottom: TabBar(
             isScrollable: true,
             labelColor: Colors.white,
@@ -113,7 +113,8 @@ class _ProductWidgetState extends State<ProductWidget> {
   }
 }
 
-class titleWidget extends StatelessWidget {
+// ignore: must_be_immutable
+class TitleWidget extends StatelessWidget {
   late CartProvider cartProvider;
   int count = 0;
 

@@ -6,6 +6,7 @@ import 'package:provider/provider.dart';
 import 'package:simpret/models/cart_model.dart';
 import 'package:simpret/providers/cart_provider.dart';
 
+// ignore: must_be_immutable
 class CartWidget extends StatelessWidget {
   late CartProvider cartProvider;
   bool enableButtons = true;
@@ -153,6 +154,7 @@ class CartWidget extends StatelessWidget {
   }
 }
 
+// ignore: must_be_immutable
 class CartItemWidget extends StatelessWidget {
   late CartModel cartModel;
   CartItemWidget({required this.cartModel});
@@ -249,6 +251,7 @@ class CartItemWidget extends StatelessWidget {
   }
 }
 
+// ignore: must_be_immutable
 class CartItemEditWidget extends StatefulWidget {
   CartModel cartModel;
   BuildContext contextCartWidget;
@@ -405,6 +408,7 @@ class _CartItemEditWidgetState extends State<CartItemEditWidget> {
   }
 }
 
+// ignore: must_be_immutable
 class CartSubmissionWidget extends StatefulWidget {
   BuildContext contextCartWidget;
   late CartProvider cartProvider;
