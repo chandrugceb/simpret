@@ -4,9 +4,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:intl/intl.dart';
 import 'package:provider/provider.dart';
 import 'package:simpret/models/cart_model.dart';
-import 'package:simpret/models/product_model.dart';
 import 'package:simpret/providers/cart_provider.dart';
-import '';
 
 class CartWidget extends StatelessWidget {
   late CartProvider cartProvider;
