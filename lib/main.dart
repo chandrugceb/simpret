@@ -1,12 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'package:simpret/providers/cart_provider.dart';
 import 'package:simpret/providers/product_provider.dart';
 import 'package:simpret/widgets/home_widget.dart';
-import 'package:http/http.dart' as http;
-import 'dart:convert' as convert;
 
 void main() {
   runApp(MyApp());
