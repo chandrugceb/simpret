@@ -159,5 +159,3 @@ class DailySales {
     }
   }
 }
-
-//some dummy commit
