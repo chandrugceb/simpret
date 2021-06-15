@@ -50,14 +50,18 @@ class _ReportWidgetState extends State<ReportWidget> {
           ),
         ),
       ),
-      body: isLoading? spinkit:HorizontalBarChart.withChartData(widget.chartProvider.chartEntries),
-      /*
-      Center(
-        child: Text(
-          'Report Widget',
-          style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
-        ),
-      ), */
+      body: isLoading? spinkit:HorizontalBarChart.withChartData(widget.chartProvider.chartEntries, drillDownByDate),
     );
+  }
+
+  void drillDownByDate(DateTime date){
+    setState(() {
+      this.isLoading = true;
+      widget.chartProvider.drillDownByDate(date).then((value) {
+        setState(() {
+          this.isLoading = false;
+        });
+      } );
+    });
   }
 }
