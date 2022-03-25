@@ -39,9 +39,9 @@ class HorizontalBarChart extends StatelessWidget {
           charts.SelectionModelConfig(
               changedListener: (charts.SelectionModel model) {
                 if(model.hasDatumSelection)
-                  print(model.selectedSeries[0].data[model.selectedDatum[0].index].date);
+                  print(model.selectedSeries[0].data[model.selectedDatum[0].index??0].date);
                 if(model.selectedSeries[0].data.length > 24 ){
-                  this.drillDownByDate(model.selectedSeries[0].data[model.selectedDatum[0].index].date);
+                  this.drillDownByDate(model.selectedSeries[0].data[model.selectedDatum[0].index??0].date);
                 }
               }
           )
